@@ -1,0 +1,18 @@
+{
+    "name": "com.dtech.ugraph.core.editor",
+    "rootNamespace": "DTech",
+    "references": [
+        "GUID:0284fc8ce235a4deba10de2dec180e15"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
