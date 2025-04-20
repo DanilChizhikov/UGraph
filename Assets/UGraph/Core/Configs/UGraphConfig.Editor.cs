@@ -5,10 +5,14 @@ namespace DTech.UGraph.Core
 {
 	public abstract partial class UGraphConfig
 	{
-		public void CreateNode<T>()
-			where T : UNodeConfig
+
+		public void AddNode(UNodeConfig nodeConfig)
 		{
-			var nodeConfig = CreateInstance<T>();
+			if (_nodes.Contains(nodeConfig))
+			{
+				return;
+			}
+			
 			_nodes.Add(nodeConfig);
 			AssetDatabase.AddObjectToAsset(nodeConfig, this);
 			MarkAsDirty();

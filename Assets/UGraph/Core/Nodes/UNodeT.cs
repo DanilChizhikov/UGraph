@@ -1,6 +1,6 @@
 using DTech.UGraph.Core.Extensions;
 
-namespace DTech.UGraph.Core.Runtime
+namespace DTech.UGraph.Core
 {
 	public abstract class UNodeT<TConfig> : IUNode
 		where TConfig : UNodeConfig

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using DTech.UGraph.Core.Extensions;
 using UnityEngine;
 
-namespace DTech.UGraph.Core.Runtime
+namespace DTech.UGraph.Core
 {
 	public abstract class UGraphT<TNode> : IUGraph
 		where TNode : IUNode

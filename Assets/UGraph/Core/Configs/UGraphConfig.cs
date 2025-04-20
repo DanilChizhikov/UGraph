@@ -8,6 +8,7 @@ namespace DTech.UGraph.Core
 		[SerializeField, Min(0f)] private float _updateInterval = 0.5f;
 		[SerializeField] private List<UNodeConfig> _nodes = new();
 		[SerializeField, HideInInspector] private UNodeConfig _enterNode = default;
+		[SerializeField, HideInInspector] private List<ConnectionInfo> _connections = new();
 
 		public UNodeConfig EnterNode
 		{
@@ -36,8 +37,8 @@ namespace DTech.UGraph.Core
 				_nodes.Remove(_enterNode);
 			}
 		}
-		
 		public IReadOnlyList<UNodeConfig> Nodes => _nodes;
 		public float UpdateInterval => _updateInterval;
+		public IReadOnlyList<ConnectionInfo> Connections => _connections;
 	}
 }
